@@ -115,7 +115,7 @@ resource "aws_instance" "control_plane" {
     hostnamectl set-hostname control-plane
     timedatectl set-timezone America/Toronto
     
-    echo "$(hostname -i) contro-lplane" >> /etc/hosts
+    echo "$(hostname -i) control-plane" >> /etc/hosts
     
     # Terminal setup
     apt-get update
